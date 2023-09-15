@@ -1,0 +1,22 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "repository": "https://github.com/griffin-leo/web-h5.git",
+  "author": "guilinliu <1151335192@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@vue/eslint-config-prettier": "7.1.0",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-vue": "8.7.1",
+    "lerna": "^4.0.0",
+    "prettier": "^2.8.8",
+    "typescript": "5.0.4"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {}
+}
