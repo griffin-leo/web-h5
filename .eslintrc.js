@@ -9,6 +9,7 @@ module.exports = {
   plugins: ['markdown'],
   extends: [
     'eslint:recommended',
+    'plugin:jsonc/recommended-with-jsonc',
     'plugin:markdown/recommended',
     'plugin:vue/vue3-recommended',
     'plugin:prettier/recommended',

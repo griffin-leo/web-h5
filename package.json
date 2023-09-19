@@ -6,8 +6,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
-    "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --fix",
+    "format": "prettier --write \"./**/*.{html,vue,js,ts,jsx,tsx,md,json}\"",
+    "prepare": "husky install",
     "commit": "git-cz"
   },
   "config": {
@@ -16,20 +17,30 @@
     }
   },
   "devDependencies": {
+    "@commitlint/cli": "16.3.0",
+    "@commitlint/config-conventional": "16.2.4",
     "@typescript-eslint/parser": "5.62.0",
     "commitizen": "^4.3.0",
     "cz-lerna-changelog": "^2.0.3",
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-jsonc": "^2.9.0",
     "eslint-plugin-markdown": "^3.0.1",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-vue": "8.7.1",
+    "husky": "7.0.4",
     "lerna": "^4.0.0",
+    "lint-staged": "12.5.0",
     "prettier": "^2.8.8",
     "typescript": "5.0.4"
   },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,md,json}": [
+      "yarn format",
+      "yarn lint"
+    ]
+  },
   "workspaces": [
     "packages/*"
-  ],
-  "dependencies": {}
+  ]
 }
