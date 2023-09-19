@@ -6,8 +6,8 @@ module.exports = {
   jsxBracketSameLine: true,
   singleQuote: true,
   arrowParens: 'avoid',
-  trailingComma: 'none',
+  trailingComma: 'es5',
   endOfLine: 'auto',
-  printWidth: 120,
+  printWidth: 80,
   tabWidth: 2
 };

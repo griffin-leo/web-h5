@@ -6,13 +6,26 @@ module.exports = {
   env: {
     node: true
   },
-  extends: ['plugin:vue/vue3-essential', 'eslint:recommended', '@vue/prettier'],
+  plugins: ['markdown'],
+  extends: [
+    'eslint:recommended',
+    'plugin:markdown/recommended',
+    'plugin:vue/vue3-recommended',
+    'plugin:prettier/recommended',
+    'prettier'
+  ],
+  // ignorePatterns: '**/*.md', // 忽略所有 Markdown 文件
   rules: {
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     // prettier
     'prettier/prettier': 'error'
   },
+  parser: 'vue-eslint-parser',
   parserOptions: {
+    parser: '@typescript-eslint/parser',
     // 指定要使用的 ECMAScript 语法版本
-    ecmaVersion: 2020
+    ecmaVersion: 'latest',
+    sourceType: 'module'
   }
 };

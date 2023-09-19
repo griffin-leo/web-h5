@@ -5,10 +5,23 @@
   "author": "guilinliu <1151335192@qq.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
+    "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
   "devDependencies": {
-    "@vue/eslint-config-prettier": "7.1.0",
+    "@typescript-eslint/parser": "5.62.0",
+    "commitizen": "^4.3.0",
+    "cz-lerna-changelog": "^2.0.3",
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-markdown": "^3.0.1",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-vue": "8.7.1",
     "lerna": "^4.0.0",
