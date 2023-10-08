@@ -1,0 +1,60 @@
+:root {
+    /**
+    * Entry of basic styles
+    */
+    /* Basic Colors */
+    --fs-white: #FFFFFF;
+    --fs-black: #333333;
+    --fs-green-1: #50C341;
+    --fs-gray-1: #F4F6F8;
+    --fs-gray-2: #E6E6E6;
+    --fs-gray-3: #F0F0F0;
+    --fs-gray-4: #C8C8C8;
+    --fs-gray-5: #B4B4B4;
+    --fs-gray-6: #999999;
+    --fs-gray-7: #666666;
+
+    /* Gradient Colors */
+    --fs-gradient-green-1: linear-gradient(180deg, #6ED74B 0%, #19C855 100%);
+    
+    /* Component Colors */
+    --fs-text-white: var(--fs-white);
+    --fs-text-black: var(--fs-black);
+    --fs-text-green-1: var(--fs-green-1);
+    --fs-text-gray-4: var(--fs-gray-4);
+    --fs-text-gray-5: var(--fs-gray-5);
+    --fs-text-gray-6: var(--fs-gray-6);
+    --fs-text-gray-7: var(--fs-gray-7);
+
+    /* Padding */
+    --fs-padding-15: 30px;
+    --fs-padding-18: 36px;
+    --fs-padding-20: 40px;
+    --fs-padding-30: 60px;
+
+    /* Background Colors */
+    --fs-bg-white: var(--fs-white);
+    --fs-bg-green-1: var(--fs-green-1);
+    --fs-bg-gray-1: var(--fs-gray-1);
+    --fs-bg-gray-3: var(--fs-gray-3);
+    --fs-bg-gray-4: var(--fs-gray-4);
+
+    /* Border */
+    --fs-border-color: var(--fs-gray-2);
+    --fs-border-radius-9: 18px;
+    --fs-border-radius-12: 24px;
+    --fs-border-radius-15: 30px;
+    --fs-border-radius-20: 40px;
+    --fs-border-radius-22: 44px;
+    --fs-border-radius-24: 48px;
+
+    /* NavBar Header组件 */
+    --fs-nav-bar-height: 88px;
+    --fs-nav-bar-title-font-size: 34px;
+
+    /* Search组件 */
+    --fs-search-padding: 30px;
+    --fs-search-input-height: 80px;
+    --fs-search-label-padding: 0 10px;
+    --fs-search-action-padding: 0 30px 0 20px;
+}
