@@ -4,7 +4,10 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    es6: true,
+    node: true,
+    browser: true,
+    'vue/setup-compiler-macros': true
   },
   plugins: ['markdown'],
   extends: [
@@ -20,7 +23,10 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     // prettier
-    'prettier/prettier': 'error'
+    'prettier/prettier': 'error',
+    // vue3-eslint
+    // 添加组件命名忽略规则
+    'vue/multi-word-component-names': 'off'
   },
   parser: 'vue-eslint-parser',
   parserOptions: {
